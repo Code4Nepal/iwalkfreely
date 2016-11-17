@@ -5,20 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation for Apps</title>
     <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    
+       
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans">
+    
+    <link rel="stylesheet" href="assets/css/quill.snow.css">
+    
+    <link rel="stylesheet" href="assets/css/quill.core.css">
+    
+    <link rel="stylesheet" href="assets/css/quill.bubble.css">
+ 
+    <link rel="stylesheet" type = 'text/css' href="../assets/css/foundation.css">
+     
+    
     <script src="./assets/js/foundation.js"></script>
     <script src="./assets/js/templates.js"></script>
+   
+  
+            
     <script src="./assets/js/routes.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/controllers/home.js"></script>
+    <script src="./assets/js/controllers/post.js"></script>
+    
+     
+    
   </head>
   <body>
-    <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Foundation for Apps</strong></a></li>
+    
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="http://codefornepal.org/en/" target="_blank"><img src= "./assets/images/codefornepal.png" class='headerImage' ></a></li>
+          <li><a href="/" class='lead'>Home</a
+          ></li>
+          <li><a href="" class='lead'>Help Us</a
+          ></li>
+          <li><a href="http://codefornepal.org/en/" class='lead' target="_blank">About</a>
+          
+
+           
         </ul>
+            
       </div>
-      <div ui-view class="grid-content">
+      <div class="top-bar-right">
+        <ul class="menu">
+          <a href="#" class="links"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </a>
+          <a href="#" class="links"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> </a>
+          <a href="#" class="links"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a>
+          <a href="#" class="links"><i class="fa fa-vimeo fa-2x" aria-hidden="true"></i> </a>
+          <a href="#" class="links"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i> </a>
+          
+        </ul>
+        
       </div>
     </div>
+    
+    <div ui-view>
+      
+    </div>
+    
+   
   </body>
+      
 </html>

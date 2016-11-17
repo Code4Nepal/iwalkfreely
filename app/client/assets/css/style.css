@@ -1,0 +1,48 @@
+.headerImage{
+  height: 70px;
+  widows: 150px;
+}
+
+
+.postImage{
+  height: 100px;
+  widows: 300px;
+}
+
+p{
+  font-family: "Droid Sans", serif;
+  
+}
+
+
+.articleHeader{
+  color: black
+}
+
+
+.text{
+  border-right: 2px solid black;
+}
+
+.post_header{
+  font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+.post_text{
+  font-size: 0.7em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+.links{
+  margin-left: 10px;
+  color: black;
+}
+
+.links i:hover{
+  height: 1.3em;
+  font-size: 30px;
+}
+
+.d3{
+  height: 400px;
+}
+

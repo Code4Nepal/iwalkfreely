@@ -20,10 +20,10 @@ var isProduction = !!(argv.production);
 
 var paths = {
   assets: [
-    './client/**/*.*',
-    '!./client/templates/**/*.*',
-    '!./client/assets/{scss,js}/**/*.*',
-    '!./client/assets/js/controllers/**/*.*'
+    './**/*.*',
+    './assets/js/controllers/*.*',
+    '!./templates/**/*.*',
+    '!./assets/{scss,js}/**/*.*'
   ],
   // Sass will check these folders for files when you use @import.
   sass: [
@@ -43,12 +43,12 @@ var paths = {
     'bower_components/foundation-apps/js/angular/**/*.js',
     'bower_components/quill/dist/quill.js',
     'bower_components/ngQuill/src/ng-quill.min.js',
-    
+
     '!bower_components/foundation-apps/js/angular/app.js'
-    
-   
+
+
   ],
-  
+
   // These files are for your app's JavaScript
   appJS: [
     'client/assets/js/app.js'

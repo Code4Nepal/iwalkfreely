@@ -23,6 +23,7 @@
   },
   "private": true,
   "dependencies": {
+    "ng-quill": "^2.0.0",
     "quill": "^1.1.3"
   }
 }

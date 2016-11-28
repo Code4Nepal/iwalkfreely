@@ -1,6 +1,6 @@
 (function(){
     angular.module('application')
-        .controller('HomeController',[ '$scope', '$http', '$state', '$timeout', "$location" ,"ngQuillConfig",  function($scope, $http, $state, $timeout, $location, ngQuillConfig){
+        .controller('HomeController',[ '$scope', '$http', '$state', '$timeout', "$location"  /* , "ngQuillConfig" */,  function($scope, $http, $state, $timeout, $location /* , ngQuillConfig */ ){
             
           
      $scope.viewPost = function(req, res){
@@ -15,6 +15,10 @@
        
      }
      
+     
+     /*
+     
+     This is for the WYSIWYG
      
     var options = {
     debug: 'info',
@@ -54,6 +58,7 @@
     });
                   
     
+    */
 
   }])
     

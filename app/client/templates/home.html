@@ -1,13 +1,13 @@
-<div class="container">
+<div ng-controller="HomeController" class="container">
   <center><h3>Latest Stories-Statistics, Visualizations & Interaction</h3></center>
-  
+
   <hr>
-  
-  
+
+
   <!--
     - This Div will be repeated using ng-repeat
     -This is just a mockup for the landing page
-  
+
   -->
 
   <div class="row">
@@ -20,16 +20,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis enim iaculis tincidunt tempus. In nec finibus tellus. Quisque aliquam lacus quis vestibulum sodales. Vestibulum sit amet mattis est, et lobortis neque. Suspendisse ultricies diam ut magna imperdiet blandit. Quisque vulputate sapien nec felis tempor, nec fringilla libero fringilla. Praesent lacinia velit quis lacinia pretium. Cras eleifend magna aliquam ante dictum, ac eleifend turpis mattis. Sed malesuada mi sit amet dapibus pretium. Curabitur non aliquet enim, vel rhoncus tellus. Phasellus in sem gravida, consequat sapien non, tristique nibh. Morbi suscipit sed risus in rutrum. Morbi velit urna, dictum in mattis interdum, lobortis sed nunc.</p>
       <hr>
     </div>
-    
+
     <center>
       <button class="alert hollow button" href="#">Stats and Info Color</button>
       <button class="hollow button" ng-click="viewPost()">Read Article</button>
     </center>
   </div>
-  
+
   <hr>
-  
-  
+
+
     <div class="row">
     <div class="large-4 columns">
       <img src= "./assets/images/codefornepal.png">
@@ -38,23 +38,23 @@
       <a ng-click="viewPost()"><h4 ><strong class="articleHeader">Lorem ipsum dolor sit amet</strong></h4> </a>
       <h5><strong>By Lorem ipsum</strong></h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis enim iaculis tincidunt tempus. In nec finibus tellus. Quisque aliquam lacus quis vestibulum sodales. Vestibulum sit amet mattis est, et lobortis neque. Suspendisse ultricies diam ut magna imperdiet blandit. Quisque vulputate sapien nec felis tempor, nec fringilla libero fringilla. Praesent lacinia velit quis lacinia pretium. Cras eleifend magna aliquam ante dictum, ac eleifend turpis mattis. Sed malesuada mi sit amet dapibus pretium. Curabitur non aliquet enim, vel rhoncus tellus. Phasellus in sem gravida, consequat sapien non, tristique nibh. Morbi suscipit sed risus in rutrum. Morbi velit urna, dictum in mattis interdum, lobortis sed nunc.</p>
-      
+
       <hr>
     </div>
-      
+
     <center>
       <button class="alert hollow button" href="#">Stats and Info Color</button>
       <button class="hollow button" ng-click="viewPost()">Read Article</button>
     </center>
   </div>
-  
+
   <hr>
-  
+
   <div class="row surveyDiv">
     <div class="large-10 large-offset-2 columns">
-    
+
         <center><h3>About the survery conducted</h3> </center>
-        
+
         <p> Nothing brings more clarity to the grim reality of the normalcy with which girls and women are harassed on the streets of Nepal than this excerpt from a participant story from our #IWalkFreely online survey. Indeed, no one should be exposed to harassment to such a degree that they start getting used to it, but it’s hardly surprising that we are seeing this resigned acceptance of the misogynistic norm among our youth.  </p>
 
         <p>
@@ -62,37 +62,37 @@
 
         </p>
         Besides the streets, 71% of the participants also reported getting harassed in public transportations. 63% of the participants reported physical harassment of some form, 63% also reported being exposed to verbal harassment, and 20% reported sexual harassment. </p>
-  
+
         </p>
-          
+
         49% of the participants who said they had faced harassment were between 20 and 29 years old. Similarly, over 41% of the participants who answered in the affirmative when asked if they’d ever experienced harassment were between the ages of 13 and 19. This means a disturbing majority of the people who are harassed in our country are girls and young women.  </p>
 
         </p>
 
        <p> Participant stories illustrated that victims were very often too embarrassed to talk about what had happened with their parents or authorities, fearful that the shame of the act would fall upon them, not the perpetrators. Boys will be boys. They won’t say anything if you cover up. Just pretend you didn’t hear them. They’ll stop if you don’t pay attention to them.  </p>
 
-        
+
       <div class="d3">
         <h2>The charts will go here</h2>
       </div>
-      
-     
-    
+
+
+
     </div>
-  
+
   </div>
-  
-  
+
+
   <hr>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
   <!--
     - This design will be changed to WYSIWYG editor
     - Need to make sure what INPUTS are needed
@@ -101,21 +101,21 @@
     - Anything else?
 
   -->
-  
-  
+
+
   <center>
     <h3>Share us your story. Be part of the awareness</h3>
-    
+
    <form>
 
       <div class="row">
-       
+
         <div class="large-6 large-offset-3 columns">
             <label for="name">Name</label>
             <input name ='name' type="text" placeholder="Your Name">
           <label for ='story'>Your Story</label>
           <textarea rows="5" cols="7" placeholder="Write your comment here"></textarea>
-          
+
           <div style="width: 600px; height: 500px;">
            <button ng-click="toggle()">Toggle toolbar</button>
        <ng-quill-editor id= "editor" name="editor1" ng-model="message" toolbar="true" shouldShow ='true' show-toolbar="true" link-tooltip="true" image-tooltip="true" toolbar-entries="font size bold list bullet italic underline strike align color background link image" editor-required="true" error-class="input-error" link-tooltip="true"  fontsize-options="fontsizeOptions" fontfamily-options="fontfamilyOptions"></ng-quill-editor>
@@ -125,20 +125,20 @@
             <p>Hello World!</p>
             <p>Some initial <strong>bold</strong> text</p>
             <p><br></p>
-          </div>          
+          </div>
 -->
-            
+
           </div>
 
         </div>
       </div>
-   
-      
+
+
     </form>
-    
+
     <hr>
-  
-  
+
+
   </center>
 
 </div>

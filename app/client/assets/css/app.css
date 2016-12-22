@@ -42,7 +42,31 @@ p{
   font-size: 30px;
 }
 
-.d3{
-  height: 400px;
+
+.bar {
+  fill: steelblue;
 }
 
+.bar:hover {
+  fill: brown;
+}
+
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #dadada;
+    shape-rendering: crispEdges;
+}
+
+.axis {
+    font: 10px Georgia, Arial, sans-serif;
+}
+
+.arc text {
+    font: 10px Arial, Georgia, sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #ffffff;
+}

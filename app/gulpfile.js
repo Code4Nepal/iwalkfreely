@@ -22,6 +22,7 @@ var paths = {
   assets: [
     './**/*.*',
     './assets/js/controllers/*.*',
+		'./assets/js/bargraph/*.js',
     '!./templates/**/*.*',
     '!./assets/{scss,js}/**/*.*'
   ],
@@ -43,6 +44,10 @@ var paths = {
     'bower_components/foundation-apps/js/angular/**/*.js',
     'bower_components/quill/dist/quill.js',
     'bower_components/ngQuill/src/ng-quill.min.js',
+    'bower_components/d3/d3.js',
+     'bower_components/d3/d3.min.js',
+    
+   
 
     '!bower_components/foundation-apps/js/angular/app.js'
 
@@ -62,6 +67,7 @@ var paths = {
 gulp.task('clean', function(cb) {
   rimraf('./build', cb);
 });
+
 
 // Copies everything in the client folder except templates, Sass, and JS
 gulp.task('copy', function() {
@@ -173,9 +179,14 @@ gulp.task('build', function(cb) {
 gulp.task('default', ['server'], function () {
   // Watch Sass
   gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
+	
+	gulp.watch(['./clients/assets/js/bargraph/*.js']);
 
   // Watch JavaScript
   gulp.watch(['./client/assets/js/**/*', './js/**/*'], ['uglify:app']);
+
+	//Watch Controllers
+	gulp.watch(['./client/assets/js/controllers/*.js'], ['uglify:app']);
 
   // Watch static files
   gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);

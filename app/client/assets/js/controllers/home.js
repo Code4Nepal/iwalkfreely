@@ -1,10 +1,17 @@
 (function(){
     angular.module('application')
         .controller('HomeController',[ '$scope', '$http', '$state', '$timeout', "$location"  /* , "ngQuillConfig" */,  function($scope, $http, $state, $timeout, $location /* , ngQuillConfig */ ){
-            
           
+					
+					barGraph();
+					
+					donutChart();
+
+       
      $scope.viewPost = function(req, res){
        
+       console.log('testing');
+      
        var request = {
          id: 111111
        }
@@ -59,7 +66,12 @@
                   
     
     */
+     
+  
 
+     
+     
+     
   }])
     
     

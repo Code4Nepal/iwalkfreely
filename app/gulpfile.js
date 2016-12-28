@@ -42,8 +42,8 @@ var paths = {
     'bower_components/angular-ui-router/release/angular-ui-router.js',
     'bower_components/foundation-apps/js/vendor/**/*.js',
     'bower_components/foundation-apps/js/angular/**/*.js',
-    'bower_components/quill/dist/quill.js',
-    'bower_components/ngQuill/src/ng-quill.min.js',
+//    'bower_components/quill/dist/quill.js',
+//    'bower_components/ngQuill/src/ng-quill.min.js',
     'bower_components/d3/d3.js',
      'bower_components/d3/d3.min.js',
     
@@ -56,8 +56,23 @@ var paths = {
 
   // These files are for your app's JavaScript
   appJS: [
-    'client/assets/js/app.js'
-  ]
+    'client/assets/js/app.js',
+		
+  ],
+	
+	controllers: [
+		'client/assets/js/controllers/*.js'
+	],
+	
+	barGraph:[
+		'client/assets/js/bargraph/*.js'
+		//'client/assets/js/donutChart/*.js'
+	],
+	
+	donutGraph:[
+		'./client/assets/js/donutChart/*.js'
+	]
+	
 }
 
 // 3. TASKS
@@ -77,6 +92,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./build'))
   ;
 });
+
+
 
 // Copies your app's page templates and generates URLs for them
 gulp.task('copy:templates', function() {
@@ -109,6 +126,29 @@ gulp.task('copy:foundation', function(cb) {
 
   cb();
 });
+
+
+gulp.task('controllers', function ()
+{
+    return gulp.src(paths.controllers)
+        //.pipe(concat('client/assets/js/controllers/home.js'))
+        .pipe(gulp.dest('./build/assets/js/controllers'));
+});
+
+gulp.task('barGraph', function(){
+
+	return gulp.src(paths.barGraph)
+		.pipe(gulp.dest('./build/assets/js/bargraph'));
+});
+
+
+gulp.task('donutChart', function(){
+	return gulp.src(paths.donutGraph)
+		.pipe(gulp.dest('./build/assets/js/donutChart'));
+});
+
+
+
 
 // Compiles Sass
 gulp.task('sass', function () {
@@ -144,6 +184,8 @@ gulp.task('uglify:foundation', function(cb) {
   ;
 });
 
+
+
 gulp.task('uglify:app', function() {
   var uglify = $.if(isProduction, $.uglify()
     .on('error', function (e) {
@@ -153,6 +195,7 @@ gulp.task('uglify:app', function() {
   return gulp.src(paths.appJS)
     .pipe(uglify)
     .pipe($.concat('app.js'))
+		//.pipe($.concat('./client/assets/js/controllers/home.js'))
     .pipe(gulp.dest('./build/assets/js/'))
   ;
 });
@@ -170,6 +213,7 @@ gulp.task('server', ['build'], function() {
   ;
 });
 
+
 // Builds your entire app once, without starting a server
 gulp.task('build', function(cb) {
   sequence('clean', ['copy', 'copy:foundation', 'sass', 'uglify'], 'copy:templates', cb);
@@ -186,7 +230,11 @@ gulp.task('default', ['server'], function () {
   gulp.watch(['./client/assets/js/**/*', './js/**/*'], ['uglify:app']);
 
 	//Watch Controllers
-	gulp.watch(['./client/assets/js/controllers/*.js'], ['uglify:app']);
+	gulp.watch(['./client/assets/js/controllers/*.js'], ['controllers']);
+	
+	//Watch Graph 
+	gulp.watch(['./client/assets/js/bargraph/*.js'], ['barGraph']);
+	gulp.watch(['./client/assets/js/donutChart/*.js'], ['donutChart']);
 
   // Watch static files
   gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);

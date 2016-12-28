@@ -1,8 +1,9 @@
 function donutChart ()
 {
 	
+	console.log('checking');
 
-    var width = 400,
+    var width = 500,
     height = 500,
     radius = Math.min(width, height) / 2;
 

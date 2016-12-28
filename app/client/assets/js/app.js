@@ -1,4 +1,4 @@
-  'use strict';
+'use strict';
 
   angular.module('application', [
     'ui.router',
@@ -31,11 +31,9 @@
 
     .state('post',{
       url: '/post?id',
-      templateUrl: "./../../templates/post.html",
+      templateUrl: "./../../templates/post.html"
       //controller : "PostController"
     });
-
-
 
 
     $locationProvider.html5Mode({

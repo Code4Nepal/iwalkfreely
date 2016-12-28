@@ -15,15 +15,30 @@
       <img src= "./assets/images/codefornepal.png">
     </div>
     <div class="large-8 columns">
-      <a ng-click="viewPost()"><h4 class='articleHeader'><strong>Lorem ipsum dolor sit amet</strong></h4> </a>
-      <h5><strong>By Lorem ipsum</strong></h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis enim iaculis tincidunt tempus. In nec finibus tellus. Quisque aliquam lacus quis vestibulum sodales. Vestibulum sit amet mattis est, et lobortis neque. Suspendisse ultricies diam ut magna imperdiet blandit. Quisque vulputate sapien nec felis tempor, nec fringilla libero fringilla. Praesent lacinia velit quis lacinia pretium. Cras eleifend magna aliquam ante dictum, ac eleifend turpis mattis. Sed malesuada mi sit amet dapibus pretium. Curabitur non aliquet enim, vel rhoncus tellus. Phasellus in sem gravida, consequat sapien non, tristique nibh. Morbi suscipit sed risus in rutrum. Morbi velit urna, dictum in mattis interdum, lobortis sed nunc.</p>
+      <a ng-click="viewPost()"><h4 class='articleHeader'><strong>Real Life Horror Stories</strong></h4> </a>
+      <h5><strong>By Asmita Gautam</strong></h5>
+			
+			<p>
+			
+			That women are harassed at home, in the workplace and in the streets of Nepal is well known. What was hidden was the true extent of the problem.
+
+			Code For Nepal’s #IWalkFreely has shown not just the shocking extent of the problem but even more disturbing are the testimonies which speak of the horror Nepali girls and women face daily.
+				
+			</p>
+			
+			<p class="italic">
+
+			‘I was once harassed by my own relative,’ wrote a 12-year-old girl. Another 13-year-old female respondent said: ‘I was walking alone in an alley in the evening and a man (not so old) groped me. I was totally shocked, couldn’t process what had just happened and he ran away.’ .......
+				
+			</p>
+		
+			
       <hr>
     </div>
 
     <center>
       <button class="alert hollow button" href="#">Stats and Info Color</button>
-      <button class="hollow button" ng-click="viewPost()">Read Article</button>
+      <a class="hollow button" href="http://codefornepal.org/2016/12/1588/" target="_blank">Read Full Article</a>
     </center>
   </div>
 
@@ -78,7 +93,8 @@
 				</div>
 				
 				<div class="large-6 columns">
-					<div class="donutChart" height="500"></div>
+					<svg class ='donutChart' height='500'></svg>
+<!--					<div class="donutChart" height="500"></div>-->
 				</div>
 				
 			</div>
@@ -98,13 +114,6 @@
   <hr>
 
 
-
-
-
-
-
-
-
   <!--
     - This design will be changed to WYSIWYG editor
     - Need to make sure what INPUTS are needed
@@ -115,42 +124,22 @@
   -->
 
 
-  <center>
-    <h3>Share us your story. Be part of the awareness</h3>
-
-   <form>
-
-      <div class="row">
-
-        <div class="large-6 large-offset-3 columns">
-            <label for="name">Name</label>
-            <input name ='name' type="text" placeholder="Your Name">
-          <label for ='story'>Your Story</label>
-          <textarea rows="5" cols="7" placeholder="Write your comment here"></textarea>
-
-          <div style="width: 600px; height: 500px;">
-           <button ng-click="toggle()">Toggle toolbar</button>
-       <ng-quill-editor id= "editor" name="editor1" ng-model="message" toolbar="true" shouldShow ='true' show-toolbar="true" link-tooltip="true" image-tooltip="true" toolbar-entries="font size bold list bullet italic underline strike align color background link image" editor-required="true" error-class="input-error" link-tooltip="true"  fontsize-options="fontsizeOptions" fontfamily-options="fontfamilyOptions"></ng-quill-editor>
-
-<!--
-          <div id="editor">
-            <p>Hello World!</p>
-            <p>Some initial <strong>bold</strong> text</p>
-            <p><br></p>
-          </div>
--->
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </form>
-
-    <hr>
-
-
-  </center>
-
+  
 </div>
+
+<div class="postStory">
+	<center>
+			<p class="lead italic">Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed. If people all over the world would do this, it would change the earth.<p>
+		<p class="lead italic">–William Faulkne</p>
+		
+			<a ng-click="postStory()" class="button round customButton"><h5>Share us Your Story</h5></a>
+		
+
+			<hr>
+
+
+		</center>
+	
+</div>
+
+

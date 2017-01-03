@@ -1,7 +1,12 @@
+
 .headerImage{
   height: 70px;
   widows: 150px;
 }
+
+ng-quill-editor.ng-invalid .ql-container {
+                border: 1px dashed red;
+            }
 
 
 .postImage{
@@ -11,7 +16,7 @@
 
 p{
   font-family: "Droid Sans", serif;
-  
+
 }
 
 .customButton{
@@ -19,7 +24,7 @@ p{
 	width: 400px;
 	height: 50px;
 	padding-top: 20px;
-	
+
 }
 
 .customButton:hover{
@@ -94,9 +99,30 @@ p{
 .legend rect {
  fill:white;
  stroke:black;
- opacity:0.8; 
+ opacity:0.8;
 }
 
 .italic{
 	 font-style: italic;
+}
+
+#form_container{
+	margin-top: 50px;
+}
+
+#story_textarea{
+	margin-top: 50px;
+}
+
+#editor{
+  height: 300px;
+}
+
+div:empty:before {
+  content:attr(data-placeholder);
+  color:gray
+}
+
+.a{
+  margin-top: 30px;
 }

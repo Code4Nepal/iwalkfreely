@@ -2,13 +2,15 @@
 
   angular.module('application', [
     'ui.router',
-    'ngAnimate',,
+    'ngAnimate',
+
 
 
     //foundation
     'foundation',
     'foundation.dynamicRouting',
-    'foundation.dynamicRouting.animations'
+    'foundation.dynamicRouting.animations',
+
   ])
     .config(config)
     .run(run)
@@ -33,7 +35,21 @@
       url: '/post?id',
       templateUrl: "./../../templates/post.html"
       //controller : "PostController"
-    });
+    })
+
+		.state('story',{
+			url:"/story/create",
+			templateUrl: "./../../templates/post_story.html",
+			controller: "PostStory"
+		})
+
+		.state('getStory',{
+			url:"/stories",
+				templateUrl: "./../../templates/stories.html",
+			controller: "GetStory"
+		})
+
+		;
 
 
     $locationProvider.html5Mode({

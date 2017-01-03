@@ -42,12 +42,18 @@ var paths = {
     'bower_components/angular-ui-router/release/angular-ui-router.js',
     'bower_components/foundation-apps/js/vendor/**/*.js',
     'bower_components/foundation-apps/js/angular/**/*.js',
+
+
+
+
+
+
 //    'bower_components/quill/dist/quill.js',
 //    'bower_components/ngQuill/src/ng-quill.min.js',
     'bower_components/d3/d3.js',
      'bower_components/d3/d3.min.js',
-    
-   
+
+
 
     '!bower_components/foundation-apps/js/angular/app.js'
 
@@ -57,22 +63,22 @@ var paths = {
   // These files are for your app's JavaScript
   appJS: [
     'client/assets/js/app.js',
-		
+
   ],
-	
+
 	controllers: [
 		'client/assets/js/controllers/*.js'
 	],
-	
+
 	barGraph:[
 		'client/assets/js/bargraph/*.js'
 		//'client/assets/js/donutChart/*.js'
 	],
-	
+
 	donutGraph:[
 		'./client/assets/js/donutChart/*.js'
 	]
-	
+
 }
 
 // 3. TASKS
@@ -200,18 +206,24 @@ gulp.task('uglify:app', function() {
   ;
 });
 
+
+
+
+
 // Starts a test server, which you can view at http://localhost:8079
 gulp.task('server', ['build'], function() {
   gulp.src('./build')
     .pipe($.webserver({
       port: 8079,
       host: 'localhost',
+			script:'server.js',
       fallback: 'index.html',
       livereload: true,
       open: true
     }))
   ;
 });
+
 
 
 // Builds your entire app once, without starting a server
@@ -223,7 +235,7 @@ gulp.task('build', function(cb) {
 gulp.task('default', ['server'], function () {
   // Watch Sass
   gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
-	
+
 	gulp.watch(['./clients/assets/js/bargraph/*.js']);
 
   // Watch JavaScript
@@ -231,8 +243,8 @@ gulp.task('default', ['server'], function () {
 
 	//Watch Controllers
 	gulp.watch(['./client/assets/js/controllers/*.js'], ['controllers']);
-	
-	//Watch Graph 
+
+	//Watch Graph
 	gulp.watch(['./client/assets/js/bargraph/*.js'], ['barGraph']);
 	gulp.watch(['./client/assets/js/donutChart/*.js'], ['donutChart']);
 

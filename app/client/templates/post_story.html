@@ -1,21 +1,47 @@
-<div>
+<div id="form_container">
+
+	<center>
+
 	<form>
-  <div class="row">
-    <div class="large-6 columns">
-      <label class="error">Error
-        <input type="text" class="error" />
-      </label>
-      <small class="error">Invalid entry</small>
+		<div class="row">
+			<div class="small-8">
+
+				<div class="row">
+
+					<div class="small-3 columns">
+						<label for="name_label" class="right">Name</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="name_label" placeholder="Name" ng-model="name">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="right-label" class="right">Title</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="right-label" placeholder="Title of Your Story" ng-model="title">
+					</div>
+				</div>
+
+				<div class="row" id="story_textarea">
+					<div class="large-12 columns">
+						<div  contenteditable="true" data-placeholder="in case this div is empty" id="editor"></div>
+					</div>
+  		</div>
+
+
     </div>
-    <div class="large-6 columns error">
-      <label>Another Error
-        <input type="text" />
-      </label>
-      <small class="error">Invalid entry</small>
-    </div>
-  </div>
-  <textarea class="error" placeholder="Message..."></textarea>
-  <small class="error">Invalid entry</small>
-</form>
+
+
+
+				<button type="submit" class="button success a" id="story_submit_button" ng-click="postStory()">Post My story</button>
+
+
+
+			</div>
+		</form>
+	</center>
 
 </div>

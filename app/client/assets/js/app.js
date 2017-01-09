@@ -32,7 +32,7 @@
     })
 
     .state('post',{
-      url: '/post?id',
+      url: '/post',
       templateUrl: "./../../templates/post.html"
       //controller : "PostController"
     })
@@ -42,6 +42,12 @@
 			templateUrl: "./../../templates/post_story.html",
 			controller: "PostStory"
 		})
+
+    .state('stats',{
+      url: "/statistics/info",
+      templateUrl:"./../../templates/visualization_statistics.html",
+      controller: "Statistics"
+    })
 
 		.state('getStory',{
 			url:"/stories",

@@ -1,5 +1,5 @@
 <div ng-controller="HomeController" class="container">
-  <center><h3>Latest Stories-Statistics, Visualizations & Interaction</h3></center>
+  <center class="heading"><h3 class="heading__text">Latest Stories-Statistics, Visualizations & Interaction</h3></center>
 
   <hr>
 
@@ -7,59 +7,37 @@
   <!--
     - This Div will be repeated using ng-repeat
     -This is just a mockup for the landing page
-
   -->
 
-  <div class="row">
+  <div class="row stories--wrapper">
     <div class="large-4 columns">
-      <img src= "./assets/images/codefornepal.png">
+      <img src= "./assets/images/sh.jpg">
     </div>
     <div class="large-8 columns">
-      <a ng-click="viewPost()"><h4 class='articleHeader'><strong>Real Life Horror Stories</strong></h4> </a>
+      <a ng-click="viewPost()"><h4 class='stories__header'><strong>Real Life Horror Stories</strong></h4> </a>
       <h5><strong>By Asmita Gautam</strong></h5>
 
-			<p>
+      <p>
 
-			That women are harassed at home, in the workplace and in the streets of Nepal is well known. What was hidden was the true extent of the problem.
+      That women are harassed at home, in the workplace and in the streets of Nepal is well known. What was hidden was the true extent of the problem.
 
-			Code For Nepal’s #IWalkFreely has shown not just the shocking extent of the problem but even more disturbing are the testimonies which speak of the horror Nepali girls and women face daily.
+      Code For Nepal’s #IWalkFreely has shown not just the shocking extent of the problem but even more disturbing are the testimonies which speak of the horror Nepali girls and women face daily.
 
-			</p>
+      </p>
 
-			<p class="italic">
+      <p class="italic">
 
-			‘I was once harassed by my own relative,’ wrote a 12-year-old girl. Another 13-year-old female respondent said: ‘I was walking alone in an alley in the evening and a man (not so old) groped me. I was totally shocked, couldn’t process what had just happened and he ran away.’ .......
+      ‘I was once harassed by my own relative,’ wrote a 12-year-old girl. Another 13-year-old female respondent said: ‘I was walking alone in an alley in the evening and a man (not so old) groped me. I was totally shocked, couldn’t process what had just happened and he ran away.’ .......
 
-			</p>
+      </p>
 
 
       <hr>
     </div>
 
     <center>
-      <button class="alert hollow button" href="#">Stats and Info Color</button>
-      <a class="hollow button" href="http://codefornepal.org/2016/12/1588/" target="_blank">Read Full Article</a>
-    </center>
-  </div>
-
-  <hr>
-
-
-    <div class="row">
-    <div class="large-4 columns">
-      <img src= "./assets/images/codefornepal.png">
-    </div>
-    <div class="large-8 columns">
-      <a ng-click="viewPost()"><h4 ><strong class="articleHeader">Lorem ipsum dolor sit amet</strong></h4> </a>
-      <h5><strong>By Lorem ipsum</strong></h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis enim iaculis tincidunt tempus. In nec finibus tellus. Quisque aliquam lacus quis vestibulum sodales. Vestibulum sit amet mattis est, et lobortis neque. Suspendisse ultricies diam ut magna imperdiet blandit. Quisque vulputate sapien nec felis tempor, nec fringilla libero fringilla. Praesent lacinia velit quis lacinia pretium. Cras eleifend magna aliquam ante dictum, ac eleifend turpis mattis. Sed malesuada mi sit amet dapibus pretium. Curabitur non aliquet enim, vel rhoncus tellus. Phasellus in sem gravida, consequat sapien non, tristique nibh. Morbi suscipit sed risus in rutrum. Morbi velit urna, dictum in mattis interdum, lobortis sed nunc.</p>
-
-      <hr>
-    </div>
-
-    <center>
-      <button class="alert hollow button" href="#">Stats and Info Color</button>
-      <button class="hollow button" ng-click="viewPost()">Read Article</button>
+      <a class="button" ng-click="stats()">Stats and Info</a>
+      <a class="hollow button" ng-click="viewPost()" target="_blank">Read Full Article</a>
     </center>
   </div>
 
@@ -87,22 +65,17 @@
        <p> Participant stories illustrated that victims were very often too embarrassed to talk about what had happened with their parents or authorities, fearful that the shame of the act would fall upon them, not the perpetrators. Boys will be boys. They won’t say anything if you cover up. Just pretend you didn’t hear them. They’ll stop if you don’t pay attention to them.  </p>
 
 
-			<div class="row">
-				<div class="large-6 columns">
-					<svg width="400" height="500"></svg>
-				</div>
+      <div class="row">
+        <center>
+          <svg width="400" height="500"></svg>
+        </center>
 
-				<div class="large-6 columns">
-					<svg class ='donutChart' height='500'></svg>
-<!--					<div class="donutChart" height="500"></div>-->
-				</div>
-
-			</div>
+      </div>
 
 
 
 
-			<!-- <div class="graph" id="barGraph"></div> -->
+      <!-- <div class="graph" id="barGraph"></div> -->
 
 
 
@@ -120,29 +93,70 @@
     -  NAME
     - Textbox for story
     - Anything else?
-
   -->
 
 
 
+  <div class="row">
+    <div class="large-11 large-offset-1 columns experiences_quotes">
+			  <center class="experiences_quotes_header"><h3>Personal Experiences</h3></center>
+				<p>"Once I was harassed by my tutor at home on the last day of my tuition, he kissed me on my cheeks without my consent."</p>
+
+				<p>
+				"I was walking with my friend a man, who was riding a bicycle passed by me and squeezed my breast and ran away. I was stunned and i screamed. However i could not do anything else. he was long gone."
+				</p>
+
+			<p>
+			"I was a teenager when I was walking on the street and someone grabbed me in my personal areas. The second time it nearly happened, an adult stopped the man and nearly beat him. When it actually happened, I was the only one on the bagmati bridge and a stranger was walking from the other side."
+
+			</p>
+
+
+      <p>
+      "One day I and my sister were going to local market to get some stuffs. The road was empty. Suddenly a group of boys came in scooter and started teasing us with inappropriate names and words. They did it for more than a minute.""
+
+      </p>
+
+
+      <p>
+      "Two guys followed me half way through mid baneshowr in bike and started calling me and asked me to ride with them. They both have shades and mask on so I couldn't really see their faces. Lots of people were in the street yet no one spoke against them. I tried to call those two guys out but I lost my voice due to fear. Since I didn't respond to their comments they left me alone after harassing me for about 10 mins or so.
+"
+      </p>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
 </div>
+
+
+
+
 
 <div class="postStory">
-	<center>
-			<p class="lead italic">Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed. If people all over the world would do this, it would change the earth.<p>
-		<p class="lead italic">–William Faulkne</p>
+  <center>
+      <p class="lead italic">Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed. If people all over the world would do this, it would change the earth.<p>
+    <p class="lead italic">–William Faulkne</p>
 
-			<a ng-click="postStory()" class="button round customButton"><h5>Share us Your Story</h5></a>
-
-
-			<hr>
+      <a ng-click="postStory()" class="button round customButton"><h5>Share us Your Story</h5></a>
 
 
-		</center>
+      <hr>
+
+
+    </center>
 
 </div>
 
+
+
+
 <!-- <back-top scroll-speed=600 button-theme="light" button-text="Take me back"></back-top>-->
-
-
 

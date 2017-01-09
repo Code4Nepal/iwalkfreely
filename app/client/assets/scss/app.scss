@@ -1,2 +1,108 @@
 @import "settings";
 @import "foundation";
+
+.heading {
+  padding: 2rem 0;
+
+  &__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+}
+
+.header {
+  padding-top: 6rem;
+  text-align: center;
+
+  &__image {
+    width: 200px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  color: #000;
+  list-style: none;
+  padding: 1.5rem 2rem 0 0;
+  margin: 0;
+  opacity: 0.8;
+
+  & > li {
+    margin: 5px;
+  }
+}
+
+.icons {
+  & > a {
+    color: #000;
+  }
+
+  & > a:hover, & > a:focus {
+    color: #2ba6cb;
+  }
+}
+
+.stories {
+  &--wrapper {
+    margin: 4rem 0;
+  }
+
+  &__header {
+    font-family: "Raleway";
+    font-size: xx-large;
+    font-weight: 400;
+  }
+
+  &__header > a {
+    color: #00558b;
+  }
+
+  &__author {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  &__content {
+    font-family: "Open sans";
+    font-size: 18px;
+
+    &--quote {
+      font-style: italic;
+      font-family: "Helvetica nue";
+      font-size: 18px;
+    }
+  }
+
+  &__buttons {
+    padding: 1em 0;
+  }
+  &__buttons > a {
+    margin-left: 1em;
+  }
+}
+
+.share-us-your-story {
+  background-color: #dddddd;
+  padding: 2em;
+  text-align: center;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0.8em;
+  font-size: 0.8em;
+  text-align: center;
+}

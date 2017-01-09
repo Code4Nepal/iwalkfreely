@@ -1,17 +1,30 @@
 
 .headerImage{
-  height: 70px;
-  widows: 150px;
+  height: 60px;
+  width: 150px;
 }
 
 ng-quill-editor.ng-invalid .ql-container {
                 border: 1px dashed red;
             }
 
+.heading__text{
+   font-family: 'Lato', sans-serif;
+}
 
 .postImage{
   height: 100px;
   widows: 300px;
+}
+
+.experiences_quotes{
+  margin-bottom: 30px
+}
+
+.experiences_quotes p{
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 0.95em;
 }
 
 p{
@@ -23,8 +36,6 @@ p{
 	margin-top: 100px !important;
 	width: 400px;
 	height: 50px;
-	padding-top: 20px;
-
 }
 
 .customButton:hover{
@@ -38,7 +49,7 @@ p{
 }
 
 .postStory{
-	background-color: #F7F7F7;
+	background-color: #dddddd;
   margin-top: -20px;
 	padding-top: 40px;
 }
@@ -57,8 +68,8 @@ p{
 }
 
 .links{
-  margin-left: 10px;
-  color: black;
+  margin-left: 5px;
+  color: white;
 }
 
 .links i:hover{
@@ -88,7 +99,7 @@ p{
 
 
 .arc text {
-  font: 10px sans-serif;
+  font: 12px Raleway sans-serif;
   text-anchor: middle;
 }
 

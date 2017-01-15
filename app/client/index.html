@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Apps</title>
+    <title>I Walk Freely App</title>
 
     <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -14,6 +14,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="../assets/css/foundation.css">
+
     <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
 
     <link href="https://cdn.quilljs.com/1.1.9/quill.snow.css" rel="stylesheet">
@@ -39,8 +40,9 @@
 
     <script src="./assets/js/foundation.js"></script>
     <script src="./assets/js/templates.js"></script>
-   <script src="https://cdn.quilljs.com/1.1.9/quill.js"></script>
-   <script src="./assets/config/experiences_quotes.js"></script>
+    <script src="https://cdn.quilljs.com/1.1.9/quill.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.js"></script>
 
    <!--  <script src="../../bower_components/quill/dist/quill.js"></script>
     <script src="../../bower_components/quill/dist/quill.min.js"></script> -->
@@ -61,8 +63,9 @@
   </head>
 
   <body>
-    <div class="contain-to-grid sticky">
-      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+
+    <div class="">
+      <nav class="top-bar navigation-bar" data-topbar role="navigation" data-options="sticky_on: large">
         <ul class="title-area">
             <li><a href="http://codefornepal.org/en/" target="_blank"><img src= "./assets/images/codefornepal.png" class='headerImage' ></a></li>
             </li>
@@ -73,32 +76,38 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li><a href="https://www.facebook.com/codefornepal" class="links" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true" ></i> </a></li>
-      <li>
-      <a href="https://twitter.com/codefornepal" class="links" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> </a></li>
+       <li class="active"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=4od7Somsu6_5nEIizjwILIXl87Rb3qf8s0Rvqpb6QJ8vVTNEHyp7HvLqOUS&dispatch=5885d80a13c0db1f8e263663d3faee8d333dc9aadeed3fe0b5b299d55fd35542" class='lead'>Donate</a></li>
 
-      <li><a href="https://www.instagram.com/codefornepal/" class="links" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a></li>
+      <li class="has-dropdown">
+        <a href="#">Follow us</a>
+        <ul class="dropdown">
+         <li><a href="https://www.facebook.com/codefornepal" class="links" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true" ></i> </a></li>
+        <li><a href="https://twitter.com/codefornepal" class="links" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> </a></li>
+        <li><a href="https://www.instagram.com/codefornepal/" class="links" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a></li>
+        <li><a href="https://vimeo.com/codefornepal" class="links" target="_blank"><i class="fa fa-vimeo fa-2x" aria-hidden="true"></i> </a></li>
+        <li>
+        <a href="https://plus.google.com/+CodeforNepal" class="links" target="_blank"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i> </a></li>
+        </ul>
+      </li>
 
-      <li><a href="https://vimeo.com/codefornepal" class="links" target="_blank"><i class="fa fa-vimeo fa-2x" aria-hidden="true"></i> </a></li>
-      <li>
-      <a href="https://plus.google.com/+CodeforNepal" class="links" target="_blank"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i> </a></li>
+
 
     </ul>
 
     <!-- Left Nav Section -->
     <ul class="left">
-      <li><a ng-click="home()" class='lead'>Home</a
+      <li><a href="#/" class='lead'>Home</a
       ></li>
       <li><a ng-click="stories()" class='lead'>Stories</a
       ></li>
-       <li><a href="http://codefornepal.org/en/" class='lead' target="_blank">About</a>
-      <li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=4od7Somsu6_5nEIizjwILIXl87Rb3qf8s0Rvqpb6QJ8vVTNEHyp7HvLqOUS&dispatch=5885d80a13c0db1f8e263663d3faee8d333dc9aadeed3fe0b5b299d55fd35542" class='lead'>Donate</a
-      ></li>
+       <li><a href="http://codefornepal.org/en/" class='lead' target="_blank">About</a> </li>
+
     </ul>
 
     </section>
-      </nav>
-    </div>
+    </nav>
+  </div>
+
  <!--    <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
@@ -128,7 +137,7 @@
       </div>
     </div>
  -->
-    <div ui-view>
+    <div ui-view id="content">
 
     </div>
 

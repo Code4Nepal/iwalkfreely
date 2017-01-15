@@ -34,6 +34,8 @@ var paths = {
   // These files include Foundation for Apps and its dependencies
   foundationJS: [
     'bower_components/fastclick/lib/fastclick.js',
+
+
     'bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js',
     'bower_components/tether/tether.js',
     'bower_components/hammerjs/hammer.js',
@@ -42,6 +44,9 @@ var paths = {
     'bower_components/angular-ui-router/release/angular-ui-router.js',
     'bower_components/foundation-apps/js/vendor/**/*.js',
     'bower_components/foundation-apps/js/angular/**/*.js',
+    'bower_components/foundation-apps/dist/js/jquery.js',
+    'bower_components/foundation-apps/dist/js/foundation-apps.min.js',
+
     //'bower_components/foundation-apps/dist/css/foundation-apps.css',
 
 
@@ -52,10 +57,7 @@ var paths = {
 //    'bower_components/quill/dist/quill.js',
 //    'bower_components/ngQuill/src/ng-quill.min.js',
     'bower_components/d3/d3.js',
-     'bower_components/d3/d3.min.js',
-
-
-
+    'bower_components/d3/d3.min.js',
     '!bower_components/foundation-apps/js/angular/app.js'
 
 

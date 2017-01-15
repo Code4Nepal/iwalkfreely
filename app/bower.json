@@ -23,7 +23,11 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-apps": "~1.2.0"
+    "foundation-apps": "~1.2.0",
+    "angular-backtop": "*",
+    "ngQuill": "ngquill#^2.0.2",
+    "angular-quill": "^0.9.1",
+    "d3": "^4.4.0"
   },
   "resolutions": {
     "angular": "^1.0.8"

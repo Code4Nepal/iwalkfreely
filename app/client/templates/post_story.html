@@ -1,0 +1,47 @@
+<div id="form_container" class="container">
+
+	<center>
+
+	<form>
+		<div class="row">
+			<div class="small-8">
+
+				<div class="row">
+
+					<div class="small-3 columns">
+						<label for="name_label" class="right">Name</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="name_label" placeholder="Name" ng-model="name">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="right-label" class="right">Title</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="right-label" placeholder="Title of Your Story" ng-model="title">
+					</div>
+				</div>
+
+				<div class="row" id="story_textarea">
+					<div class="large-12 columns">
+						<div  contenteditable="true" data-placeholder="in case this div is empty" id="editor"></div>
+					</div>
+  		</div>
+
+
+    </div>
+
+
+
+				<button type="submit" class="button success a" id="story_submit_button" ng-click="postStory()">Post My story</button>
+
+
+
+			</div>
+		</form>
+	</center>
+
+</div>
